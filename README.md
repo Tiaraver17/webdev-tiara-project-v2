@@ -24,6 +24,6 @@ Di dalam proyek ini terdapat struktur dasar website menggunakan **HTML**, **CSS*
 2. Buka file `index.html` di browser
 3. Website siap dijalankan
 
----
+Proyek ini menunjukkan pemahaman dasar yang baik dalam pengembangan web serta penerapan HTML, CSS, dan JavaScript secara terstruktur.
 
 Terima kasih!
