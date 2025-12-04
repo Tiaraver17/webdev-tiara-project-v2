@@ -1,0 +1,253 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* LIGHT MODE NAVY */
+body {
+  background-color: #eaf1ff; 
+  color: #0a1a2f;
+  line-height: 1.6;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a1a2f;
+  color: #e8efff;
+  padding: 1.5rem;
+  border-bottom: 6px solid #1e4f8a;
+  text-align: center;
+  gap: 1rem;
+}
+
+header .judul h1 {
+  font-size: 1.8rem;
+}
+
+header .judul p {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* ===============================
+   NAVIGASI (NAVY)
+   =============================== */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+nav a,
+#themeBtn,
+#sayHiBtn {
+  background-color: #2c6db2;
+  color: #eaf1ff;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+  border: none;
+}
+
+nav a:hover,
+#themeBtn:hover,
+#sayHiBtn:hover {
+  background-color: #3c8ae0;
+  color: #ffffff;
+}
+
+/* ===============================
+   BAGIAN TENTANG
+   =============================== */
+#tentang {
+  padding: 1.5rem;
+  background-color: #f3f6ff;
+  margin: 1.5rem auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(10,26,47,0.2);
+}
+
+.tentang-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.foto img {
+  width: 230px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(10,26,47,0.25);
+}
+
+.deskripsi {
+  background-color: #dfe8ff;
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(10,26,47,0.2);
+  text-align: left;
+}
+
+.info-box {
+  background-color: #e8efff;
+  border-left: 5px solid #2c6db2;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Menghapus titik list */
+.info-box ul {
+  list-style: none;
+}
+
+/* ===============================
+   KEAHLIAN
+   =============================== */
+#keahlian {
+  padding: 1.5rem;
+  background-color: #f4f7ff;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(10,26,47,0.2);
+}
+
+.keahlian-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: #2c6db2;
+  color: #eaf1ff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(10,26,47,0.25);
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: #3c8ae0;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   PROYEK
+   =============================== */
+#proyek {
+  padding: 1.5rem;
+  background-color: #f3f6ff;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(10,26,47,0.15);
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+footer {
+  background-color: #0a1a2f;
+  color: #eaf1ff;
+  padding: 1.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+footer a {
+  color: #3c8ae0;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .tentang-container {
+    grid-template-columns: 260px 1fr;
+  }
+
+  .keahlian-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .tentang-container {
+    grid-template-columns: 300px 1fr;
+  }
+  .keahlian-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===============================
+   DARK MODE FULL NAVY
+   =============================== */
+.dark-mode {
+  background-color: #07111f;
+  color: #eaf1ff;
+}
+
+.dark-mode header {
+  background-color: #081629;
+  border-bottom-color: #1e4f8a;
+}
+
+.dark-mode nav a,
+.dark-mode #themeBtn,
+.dark-mode #sayHiBtn {
+  background-color: #1e4f8a;
+  color: #eaf1ff;
+}
+
+.dark-mode nav a:hover,
+.dark-mode #themeBtn:hover,
+.dark-mode #sayHiBtn:hover {
+  background-color: #2c6db2;
+}
+
+.dark-mode #tentang,
+.dark-mode #keahlian,
+.dark-mode #proyek,
+.dark-mode .deskripsi,
+.dark-mode .info-box {
+  background-color: #0d1b30;
+  color: #eaf1ff;
+  border-left-color: #2c6db2;
+}
+
+.dark-mode .card {
+  background-color: #1e4f8a;
+  border: 1px solid #2c6db2;
+}
+
+.dark-mode footer {
+  background-color: #081629;
+}
